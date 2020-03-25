@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Matek_random</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="firstContainer">
+        <h2>Írd be a neved!</h2>
+        <input type="text" required maxlength="20" id="nickName" />
+        <br>
+        <button onclick="checkUser()">Bejelentkezés</button>
+        <h2 id="udv"></h2>
+    </div>
+    <img id="tomato" src="paradicsom.png" alt="paradicsomBomba">
+    <div id="startButtonDiv"><button onclick="start()" id="startButton">Start</button></div>
+    
+    <div class="main-container">
+
+        <div class="gird-item">
+            <h2 id="timer">5:00</h2>
+        </div>
+        <div class="gird-item">
+            <h2>
+                <p>Mennyi?</p>
+                <span id="number1"></span>
+                <span id="make"></span>
+                <span id="number2"></span>
+            </h2>
+        </div>
+
+        <div class="gird-item">
+            <h2>Pontszám:</h2>
+            <h2 id="points"></h2>
+        </div>
+
+        <div class="gird-item"><input id="answer" autocomplete="off" /></div>
+        <div></div>
+        <div id="checkButtonDiv"> <button onclick="check()">Ellenőrzés</button></div>
+        
+
+    </div>
+    <audio src="helyes.mp3" type="audio/mpeg" id="helyes"></audio>
+    <audio src="helytelen.mp3" type="audio/mpeg" id="helytelen"></audio>
+    <script src="index.js" defer></script>
+
+</body>
+
+</html>
