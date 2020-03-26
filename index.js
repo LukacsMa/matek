@@ -168,7 +168,7 @@ function stop() {
 
 
 
-setTimeout(stop, 100 * 3000);
+setTimeout(stop, 100 * 300);
 
 //check the answer
 
