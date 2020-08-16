@@ -1,5 +1,5 @@
 let yourPoints;
-
+let yourPoint = 0;
 function checkUser() {
   let yourName2 = document.getElementById("nickName").value.toLowerCase();
   let yourName1 = document.getElementById("nickName").value.charAt(0).toUpperCase();
@@ -98,7 +98,7 @@ let mySecond;
 
 function start() {
   //clear window
-
+  yourPoint = 0;
   document.getElementsByClassName("firstContainer")[0].style.display = "none";
   document.getElementById("startButton").disabled = true;
   document.getElementById("startButtonDiv").style.display = "none";
@@ -133,7 +133,7 @@ function stop() {
 
 //check the answer
 
-let yourPoint = 0;
+
 let myAnswer;
 
 function check() {
