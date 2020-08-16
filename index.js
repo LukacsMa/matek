@@ -65,7 +65,7 @@ function randomNumber2() {
   myNumber2.innerText = yourNumber2;
 }
 
-let countDown = 300;;
+let countDown = 60;
 
 function countDownFunc() {
   let countDownMin = Math.floor(countDown / 60);
@@ -117,7 +117,7 @@ function stop() {
   stop2();
   myImage.src = "hurra.gif";
   document.getElementById("points").innerText = `Gratulálok! ${yourPoint} pontot szereztél`;
-  countDown = 300;
+  countDown = 60;
   document.getElementById("startButton").disabled = false;
   document.getElementById("startButtonDiv").style.display = "block";
   document.getElementById("checkButtonDiv").style.display = "none";
